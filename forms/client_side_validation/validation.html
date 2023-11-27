@@ -33,11 +33,13 @@ improves user experience -->
 <!-- Adding CSS to the invalid input fields 
     with the help of pseudo classes. -->
 <style>
-    input:invalid {
+    input:focus:invalid {
         border: 2px solid red;
     }
-
-    input:valid {
+/* without :focus the field would be affected by the CSS
+to activate the CSS the user would have to interact with the 
+input element. */
+    input:focus:valid {
         background-color: greenyellow;
     }
 
