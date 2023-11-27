@@ -1,3 +1,12 @@
+<!-- Client side validation saves computing resources and 
+improves user experience -->
+
+<!-- 
+    required: the input field must be filled to continue
+    minlength: the minimum number of characters required
+    maxlength: the maximum number of characters required
+ -->
+
 <form action="" method="post">
     <div>
         <label for="user_name">User Name</label>
@@ -19,14 +28,20 @@
     <div>
         <button type="submit">Sign Up</button>
     </div>
-    
 </form>
 
-<!-- Client side validation saves computing resources and 
-improves user experience -->
+<!-- Adding CSS to the invalid input fields 
+    with the help of pseudo classes. -->
+<style>
+    input:invalid {
+        border: 2px solid red;
+    }
 
-<!-- 
-    required: the input field must be filled to continue
-    minlength: the minimum number of characters required
-    maxlength: the maximum number of characters required
- -->
+    input:valid {
+        background-color: greenyellow;
+    }
+
+    input:hover {
+        background-color: aqua;
+    }
+</style>
