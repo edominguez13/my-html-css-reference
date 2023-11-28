@@ -5,6 +5,7 @@ improves user experience -->
     required: the input field must be filled to continue
     minlength: the minimum number of characters required
     maxlength: the maximum number of characters required
+    Min and max: Determine the minimum and maximum values allowed for an input field. They are usually applied to numerical text inputs, range inputs or dates. 
  -->
 
 <form action="" method="post">
@@ -26,8 +27,24 @@ improves user experience -->
         required minlength="8">
     </div>
     <div>
+        <label for="user_age">Age</label>
+        <br>
+        <input type="number" id="user_age" name="user_age" min="18" max="35"> 
+    </div>
+    <div>
+        <label for="user_income">Income</label>
+        <br>
+        <input type="range" id="user_income" name="user_income" min="50000" max="100000"> 
+    </div>
+    <div>
+        <label for="user_phone">Telephone: Format 1-234-567-8900</label>
+        <br>
+        <input type="tel" id="user_phone" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" > 
+    </div>
+    <div>
         <button type="submit">Sign Up</button>
     </div>
+    
 </form>
 
 <!-- Adding CSS to the invalid input fields 

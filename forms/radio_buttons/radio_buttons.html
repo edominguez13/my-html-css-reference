@@ -1,0 +1,29 @@
+<!-- The field set element groups the radio buttons 
+and with its id property we can relate them -->
+
+<form action="" method="post">
+    <fieldset id="size">
+        <!-- The name attribute of the inputs must be the same as the id of the fieldset-->
+        <label>
+            <input type="radio" name="size" id="" value="2">2-person table
+        </label>
+        <!-- wraping the radio button with a label element improves UX
+        for mobile users of the app -->
+        <label>
+            <input type="radio" name="size" id="" value="4" checked>4-person table
+            <!-- the checked property makes that option a default value -->
+        </label>
+        <label>
+            <input type="radio" name="size" id="" value="6">6-person table
+        </label>
+    </fieldset>
+    <fieldset id="location">
+        <label>
+            <input type="radio" name="location" id="" value="indoors" checked>2-person table
+        <!-- the checked property makes that option a default value -->
+        </label>
+        <label>
+            <input type="radio" name="location" id="" value="outdoors">6-person table
+        </label>     
+    </fieldset>
+</form>
