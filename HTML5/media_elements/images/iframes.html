@@ -1,0 +1,25 @@
+<!-- iframes makes it possible to run an instance of an embedded webpage
+in your site -->
+<!-- most used for ads, but it also can show other page content like a social media post -->
+<!-- can be dangerous because it runs JS from another website
+that could be malicious software -->
+
+
+<!-- the allow attribute can be used to limit the risks -->
+<!-- the sandbox attribute is used to place restrictions, if empty all restrictions are applied by default -->
+<iframe src="https://www.example.com" 
+    frameborder="0" 
+    height="200" 
+    width="400"
+    allow="payment 'none'; camera 'none'; microphone 'none';"
+    sandbox
+    name="example iframe"
+    loading="lazy" 
+    title="this is an example iframe, This attribute let's you 
+    add a description to the iframe for accessibility purposes. "></iframe>
+
+    <!--  -->
+<!-- the use of iframes is not recommended -->
+<!-- the sandbox attribute can prevent files being downloaded and popup windows -->
+
+
