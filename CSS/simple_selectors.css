@@ -1,0 +1,32 @@
+/* Simple selectores */
+
+/* Element Selectors */
+p {
+    color: blue;
+}
+
+h1 {
+    color:coral
+}
+
+/* Universal Selector */
+* {
+    /* This setting is to erase browser specific configurations */
+    padding: 0;
+    margin: 0;
+}
+
+/* ID Selector */
+#sample-id {
+    color: blue;
+}
+
+/* Class Selector */
+.sample-class {
+    color: blue;
+}
+
+/* Grouping Selector */
+h1, h2, p {
+    padding-left: 10px;
+}
