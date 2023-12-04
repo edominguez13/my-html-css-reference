@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            p {
+                border: 1px solid;
+            }
+
+            p.one {
+                margin-left: 20px;
+                
+            }
+
+            p.two {
+                margin-right: 50px;
+                
+            }
+
+            p.three {
+                margin: 25px 50px 75px 100px;
+                
+            }
+
+            div {
+                width: 50;
+                border: 3px dotted lightblue;
+                
+            }
+
+            p.four {
+                margin: 10%; /*10% of the viewport margin */
+                padding: 5%;
+               
+            }
+
+            p.five {
+                padding: 10px 20px 30px 40px; /*clockwise*/
+            }
+
+            p.six {
+                padding-left: 100px;
+            }
+
+            div.seven {
+                border: 1px solid red;
+                margin-left: 100px;
+            }
+
+            p.ex1 {
+            margin-left: inherit;
+            }
+
+            div.centered {
+                width: 300px;
+                margin: auto;
+                border: 1px solid red;
+            }
+    </style>
+</head>
+<body>
+    <p class="explain"> Margins are used to create space around elements, outside of any defined borders.</p>
+    <br>
+    <p class="one">marging left 20px </p>
+    <br>
+    <p class="two">This border used short-hand for two sides </p>
+    <br>
+    <p class="three"> margin shorthand, uses the same side order as the borders, clockwise</p>
+    <br>
+    <div>
+        <p class="four">10% of the viewport margin</p>
+    </div>
+    <br>
+    <p class="five">clockwise padding</p>
+    <br>
+    <p class="six">padding 100px on the left side</p>
+    <div class="seven">
+        <p class="ex1"> inheriting the margin of the parent</p>
+    </div>
+    <br>
+    <div class="centered">
+        This div will be horizontally centered because it has margin: auto;
+        </div>
+    
+</body>
+</html>
